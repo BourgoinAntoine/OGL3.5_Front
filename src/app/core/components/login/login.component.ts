@@ -29,7 +29,7 @@ export class LoginComponent {
     }
     this._authentificationService.login(this.loginFormGroup.value).subscribe({
       next:(userTokenDTO) => {
-        this._router.navigate(["/home"]);
+        this._router.navigate(["/character"]);
       },
       error:(error)=>{
         console.log(error);
