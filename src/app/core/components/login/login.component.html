@@ -1,0 +1,7 @@
+<h2>formulaire d'enregistrement</h2>
+
+<form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+    <input type="email" placeholder="votre email" formControlName="email"><br>
+    <input type="password" placeholder="votre mot de passe" formControlName="password"><br>
+    <button type="submit">valider</button>
+</form>

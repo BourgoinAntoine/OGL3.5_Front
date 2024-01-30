@@ -1,0 +1,32 @@
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex: 1;
+    height: 100%;
+
+    li{
+      display: flex;
+      align-items: center;
+      color: black;
+    }
+    a {
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+      padding: 7px;
+      cursor: pointer;
+    }
+  }
+
+  .auth {
+    display: flex;
+    align-items: center;
+    *{
+      margin: 3px;
+    }
+  }
+}

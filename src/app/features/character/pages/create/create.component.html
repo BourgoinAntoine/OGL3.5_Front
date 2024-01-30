@@ -1,0 +1,21 @@
+<h2>Formulaire de Création de perso</h2>
+
+<form [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="Nom du joueur" formControlName="player_name" /><br>
+  <input type="text" placeholder="Prénom" formControlName="firstname"/><br>
+  <input type="text" placeholder="Nom" formControlName="lastname" /><br>
+  <input type="text" placeholder="Genre" formControlName="gender"/><br>
+  <input type="number" placeholder="Age" formControlName="age"/><br>
+  <input type="number" placeholder="Taille" formControlName="height"/><br>
+  <input type="number" placeholder="Poids" formControlName="weight"/><br>
+  <input type="number" placeholder="Niveau" formControlName="level"/><br>
+  <input type="number" placeholder="For" formControlName="force"/><br>
+  <input type="number" placeholder="Dex" formControlName="dexterity"/><br>
+  <input type="number" placeholder="Int" formControlName="intelligence"/><br>
+  <input type="number" placeholder="Con" formControlName="constitution"/><br>
+  <input type="number" placeholder="Sag" formControlName="sagesse"/><br>
+  <input type="number" placeholder="Cha" formControlName="charisma"/><br>
+  <input type="text" placeholder="Race" formControlName="race"/><br>
+  <input type="text" placeholder="Profil" formControlName="Profil"/><br>
+  <button type="submit">valider</button><br>
+</form>
