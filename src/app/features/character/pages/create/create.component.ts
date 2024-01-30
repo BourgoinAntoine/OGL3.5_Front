@@ -60,7 +60,7 @@ export class CreateComponent {
     }
     this._characterService.create(this.characterForm.value).subscribe({
       next:(characterDTO) => {
-        this._router.navigate(["/home"]);
+        this._router.navigate(["/character"]);
       },
       error:(error) =>{
         console.log(error)
