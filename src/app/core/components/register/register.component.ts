@@ -35,7 +35,7 @@ export class RegisterComponent {
     
     this._authentificationService.register(this.registerFormGroup.value).subscribe({
       next: (userTokenDTO) => {
-        this._router.navigate(["/home"]);
+        this._router.navigate(["/character"]);
         //message de confirmation
       } , 
       error: (error)=>{
