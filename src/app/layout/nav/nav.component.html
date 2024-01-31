@@ -9,4 +9,10 @@
     <li *ngIf="currentUser">
       <a (click)="logout()">Logout</a>
     </li>
+  </ul><br>
+  <ul *ngIf="currentUser">
+    <li><a routerLink="/character">Character</a></li>
+    <li><a routerLink="/chantier">Race</a></li>
+    <li><a routerLink="/chantier">Profil</a></li>
+    <li><a routerLink="/chantier">Objet</a></li>
   </ul>

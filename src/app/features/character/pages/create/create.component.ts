@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class CreateComponent {
 
   characterForm!: FormGroup;
+  races: string[] = ['Troll','Elfe','...'];
 
   constructor(
     private readonly _characterService: CharacterService,
@@ -48,12 +49,15 @@ export class CreateComponent {
 
     raceId:[null],
 
-    profilId :[null]
+    // profilId :[null]
       
-    })
+    });
+
   }
 
   onSubmit():void{
+    console.log(this.characterForm.value);
+    
     if (!this.characterForm.valid) {
       return;
       

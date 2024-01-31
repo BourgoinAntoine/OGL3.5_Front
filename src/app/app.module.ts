@@ -11,6 +11,7 @@ import { LoginComponent } from './core/components/login/login.component';
 import { RegisterComponent } from './core/components/register/register.component';
 import { HomeComponent } from './core/pages/home/home.component';
 import { SharedModule } from './shared/shared.module';
+import { ChantierComponent } from './core/pages/chantier/chantier.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
+    ChantierComponent,
     
   ],
   imports: [

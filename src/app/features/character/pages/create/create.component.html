@@ -15,7 +15,9 @@
   <input type="number" placeholder="Con" formControlName="constitution"/><br>
   <input type="number" placeholder="Sag" formControlName="sagesse"/><br>
   <input type="number" placeholder="Cha" formControlName="charisma"/><br>
-  <input type="text" placeholder="Race" formControlName="race"/><br>
-  <input type="text" placeholder="Profil" formControlName="Profil"/><br>
+  <select formControlName="raceId">
+    <option *ngFor="let race of races; let i = index" [value]="i+1">{{race}}</option>
+  </select>
+  <!-- <input type="text" placeholder="Profil" formControlName="Profil"/><br> -->
   <button type="submit">valider</button><br>
 </form>
